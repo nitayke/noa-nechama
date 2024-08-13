@@ -1,0 +1,6 @@
+@import url("./reset.css");
+
+.app {
+  height: 100vh;
+  background-color: rgb(7, 0, 27);
+}
