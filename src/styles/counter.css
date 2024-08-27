@@ -1,0 +1,64 @@
+.counter-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffe6e6; /* Soft pink background for a birthday theme */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  direction: rtl; /* Right-to-left text direction for Hebrew */
+}
+
+.counter-inner-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 600px;
+  box-sizing: border-box;
+  border: 2px dashed #ff4d4d; /* Dotted border for a festive feel */
+}
+
+.counter-header {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #e74c3c; /* Birthday theme color */
+}
+
+/* Grid container */
+.counter-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+
+.counter-p {
+  background-color: #fff; /* White background for each card */
+  border-radius: 8px;
+  padding: 10px 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 17px;
+  color: #34495e;
+  position: relative;
+}
+
+.counter-p::before {
+  content: '\1F382'; /* Birthday cake emoji */
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+}
+
+.counter-p-1::before {
+  content: '\1F388'; /* Balloon emoji for the first card */
+}
+
+.counter-p-1 {
+  font-weight: bold;
+  font-size: 19px;
+  color: #ff4d4d; /* Accent color */
+}
