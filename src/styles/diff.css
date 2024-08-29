@@ -7,17 +7,17 @@
 .diff-wrapper {
     position: relative;
     margin: 0 2.5%; /* Space between the images */
-    border: 2px solid #ddd; /* Light border around images */
     width: 45%; /* Adjust the width to fit within the container */
-    border-radius: 5px; /* Rounded corners for a smoother look */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-    transition: transform 0.3s ease; /* Smooth transition for hover effect */
     cursor: pointer;
 }
 
 /* Image styling */
 .diff-img {
     width: 100%;
+    border: 2px solid #ddd; /* Light border around images */
+    border-radius: 10px; /* Rounded corners for a smoother look */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .marker {

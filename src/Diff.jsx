@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import "./styles/diff.css";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 export default function a() {
     const [markers, setMarkers] = useState([]);
-    const [markerCount, setMarkerCount] = useState(0);
+    const [markerCount, setMarkerCount] = useState(1);
+    const [hidden, setHidden] = useState(true);
+    const navigate = useNavigate();
 
     const handleImageClick = (event, imageIndex) => {
         const rect = event.target.getBoundingClientRect();
@@ -12,11 +15,14 @@ export default function a() {
         const y = event.clientY - rect.top;
         if (markerCount == 3) {
             toast("תנסי ללחוץ גם על התמונה השנייה!");
+        } else if (markerCount == 21) {
+            toast("הצלחת למצוא 21 הבדלים, כל הכבוד!");
+            setHidden(false);
         } else {
             toast.success("יפה מאוד נועהנ!");
         }
 
-        setMarkers([...markers, { x, y, imageIndex, number: markerCount + 1 }]);
+        setMarkers([...markers, { x, y, imageIndex, number: markerCount }]);
         setMarkerCount(markerCount + 1);
     };
 
@@ -59,6 +65,15 @@ export default function a() {
                     ))}
                 </div>
             </div>
+            <button
+                style={{ marginRight: 200, marginTop: 20 }}
+                hidden={hidden}
+                onClick={() => {
+                    navigate("/crossword");
+                }}
+            >
+                לשלב הבא
+            </button>
         </>
     );
 }

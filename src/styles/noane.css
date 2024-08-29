@@ -9,36 +9,8 @@
     border: 3px solid #ff85b0; /* A bright pink border for a birthday feel */
 }
 
-.birthday-input {
-    width: 80%;
-    padding: 10px;
-    font-size: 18px;
-    border-radius: 8px;
-    border: 2px solid #ff85b0; /* Matching the container's border */
-    margin-bottom: 15px;
-    box-sizing: border-box;
-    text-align: center;
-    outline: none;
-    transition: border-color 0.3s;
-}
-
 .birthday-input:focus {
     border-color: #ff4d4d; /* Darker pink on focus */
-}
-
-.birthday-button {
-    background-color: #ff85b0;
-    color: white;
-    font-size: 18px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.birthday-button:hover {
-    background-color: #ff4d4d;
 }
 
 .birthday-message {

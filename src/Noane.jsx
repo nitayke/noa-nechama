@@ -32,9 +32,12 @@ export default function Noane() {
                     case "נועה נחמה קסנר":
                         setMessage("נועהנ, שכחת שירשת ממני עוד שם?");
                         break;
+                    case "נועה נחמה אריה":
+                        setMessage("מה עם שם משפחה?");
+                        break;
                     case "נועה נחמה אריה קסנר":
                         setMessage("כל הכבוד לך! נועה נחמה משו אריה קסנר");
-                        navigate("");
+                        navigate("/diff");
                         break;
                     default:
                         setMessage("תשובה שגויה. נסי שנית.");
@@ -47,13 +50,10 @@ export default function Noane() {
         >
             <h1>מי חוגגת היום יומולדת?</h1>
             <input
-                className="birthday-input"
                 onChange={(e) => setName(e.target.value)}
                 value={name}
             ></input>
-            <button type="submit" className="birthday-button">
-                אישור
-            </button>
+            <button type="submit">אישור</button>
             <span className="birthday-message">{message}</span>
         </form>
     );
