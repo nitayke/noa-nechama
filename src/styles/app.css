@@ -1,5 +1,17 @@
 @import url("./reset.css");
 
-.app {
+body {
+    background-color: #ffe6f2;
+    color: #333;
     height: 100vh;
+}
+
+* {
+    font-family: Assistant;
+}
+
+h1 {
+    font-size: 28px;
+    color: #e74c3c; /* Bright red color for the title */
+    margin-bottom: 20px;
 }
