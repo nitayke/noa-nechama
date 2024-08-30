@@ -1,3 +1,4 @@
+import React from "react";
 import "./styles/cake.css";
 
 export default () => (
@@ -240,8 +241,16 @@ export default () => (
             <rect x="10" y="475.571" fill="#fefae9" width="180" height="4" />
         </svg>
         <div className="text">
-            <h1>יומולדת שמח נועהנ!</h1>
-            <p>אחלה</p>
+            <h1>מזל טוב נועהנ!</h1>
+            <p>הכנתי לך עוגה...</p>
         </div>
+        <button
+            style={{ marginInline: 200, marginBlock: 20 }}
+            onClick={() => {
+                location.href = "/counter";
+            }}
+        >
+            לחצי כאן כדי לעבור לשלב הבא
+        </button>
     </>
 );

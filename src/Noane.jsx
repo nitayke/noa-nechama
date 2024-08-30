@@ -37,7 +37,9 @@ export default function Noane() {
                         break;
                     case "נועה נחמה אריה קסנר":
                         setMessage("כל הכבוד לך! נועה נחמה משו אריה קסנר");
-                        navigate("/diff");
+                        setTimeout(() => {
+                            navigate("/diff");
+                        }, 2000);
                         break;
                     default:
                         setMessage("תשובה שגויה. נסי שנית.");

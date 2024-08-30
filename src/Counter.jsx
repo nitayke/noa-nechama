@@ -53,7 +53,7 @@ export default function Counter() {
         <div className="counter-container">
             <div className="counter-inner-container">
                 <h1 className="counter-header">
-                    כמה זמן עבר מאז שנועה נחמה נולדה:
+                    כמה זמן* עבר מאז שנועה נחמה נולדה:
                 </h1>
                 <div className="counter-cards-container">
                     <p className="counter-p-1">{time.years} שנים</p>
@@ -64,6 +64,12 @@ export default function Counter() {
                     <p className="counter-p">{time.seconds} שניות</p>
                 </div>
             </div>
+            <p style={{ marginTop: 40 }}>
+                * לועזי. לא הצלחתי לעשות את זה עם עברי...
+            </p>
+            <p style={{ marginTop: 10 }}>
+                ומצטער על הפאשלות בCSS. אני לא מספיק מבין בזה.
+            </p>
         </div>
     );
 }

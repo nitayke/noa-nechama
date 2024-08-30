@@ -1,11 +1,15 @@
 import Noane from "./Noane";
 import MyCrossWord from "./Crossword";
+import Cake from "./Cake";
+import Counter from "./Counter";
 import Diff from "./Diff";
 import { createRoot } from "react-dom/client";
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Fireworks from "@fireworks-js/react";
 import "./styles/app.css";
+import Url from "./Url";
+import Level4 from "./Level4";
 import { ToastContainer } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
@@ -20,10 +24,25 @@ const router = createBrowserRouter([
         element: <Fireworks style={{ height: "99vh" }} />,
     },
     {
-        path: "/crossword",
-        element: <MyCrossWord />,
+        path: "/cake",
+        element: <Cake />,
     },
-    { path: "/diff", element: <Diff /> },
+    {
+        path: "/diff",
+        element: <Diff />,
+    },
+    {
+        path: "/level3",
+        element: <Url />,
+    },
+    {
+        path: "/level4",
+        element: <Level4 />,
+    },
+    {
+        path: "/counter",
+        element: <Counter />,
+    },
 ]);
 
 const rootElement = document.getElementById("root");

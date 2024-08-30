@@ -69,7 +69,7 @@ export default function a() {
                 style={{ marginRight: 200, marginTop: 20 }}
                 hidden={hidden}
                 onClick={() => {
-                    navigate("/crossword");
+                    navigate("/level3");
                 }}
             >
                 לשלב הבא
