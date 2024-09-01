@@ -2,26 +2,24 @@ import "./styles/card.css";
 import React from "react";
 
 export default () => (
-    <div className="card-body">
-        <div className="birthdayCard">
-            <div className="cardFront">
-                <h3 className="happy">יומולדת שמח לנועה נחמה!</h3>
-                <div className="balloons">
-                    <div className="balloonOne" />
-                    <div className="balloonTwo" />
-                    <div className="balloonThree" />
-                    <div className="balloonFour" />
+    <div className="card-container">
+        <div className="card">
+            <div className="back"></div>
+            <div className="front">
+                <div className="imgset">
+                    <img
+                        width="100%"
+                        src="https://1.bp.blogspot.com/-Mgj9-rbs65E/XfMoPSD5gtI/AAAAAAAAURk/NBokE2gSS2cTSJ2em5lZ5hJDuTtRN7UVwCLcBGAsYHQ/s1600/2713997.png"
+                    />
                 </div>
             </div>
-            <div className="cardInside">
-                <h3 className="back">מזל טוב נועה נחמה!</h3>
-                <p className="card-p">לנועה נחמה היקרה,</p>
-                <p className="card-p">
-                    יומולדת שמח!! רציתי לאחל לך את מיטב הברכות ליום המיוחד הזה:
-                    אושר, עושר, בריאות איתנה, שפע, ישועות ועוד. מי ייתן ותמשיכי
-                    להיות מקסימה כמו שאת, אשת חיל, ומשו.
+            <div className="text-container">
+                <p id="head">מזל טוב נועה נחמה!</p>
+                <p>
+                    מי ייתן ותזכי לאושר רב, בריאות, שפע, נחת, שמחה, מנוחה, ועוד
+                    המון ברכות.
                 </p>
-                <p className="card-name">נתאי</p>
+                <p>אמן!</p>
             </div>
         </div>
     </div>

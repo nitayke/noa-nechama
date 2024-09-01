@@ -11,6 +11,7 @@ import "./styles/app.css";
 import Url from "./Url";
 import Level4 from "./Level4";
 import { ToastContainer } from "react-toastify";
+import Card from "./Card";
 
 import "react-toastify/dist/ReactToastify.css";
 
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
     {
         path: "/counter",
         element: <Counter />,
+    },
+    {
+        path: "/card",
+        element: <Card />,
     },
 ]);
 
